@@ -3,9 +3,7 @@ language: go
 branches:
   only:
     - master
-    - development
-    - travis
-    - /\d+\.\d+\.\d+/
+    - okta-improvements
 
 go:
   - 1.12.x
@@ -51,5 +49,5 @@ after_success:
 
 notifications:
   email:
-    on_success: always
-    on_failure: always
+    on_success: never
+    on_failure: never

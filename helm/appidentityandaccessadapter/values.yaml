@@ -50,10 +50,10 @@ logging:
   ## which can be easily consumed by the 3rd party 
   ## logging systems. Setting this value to false 
   ## produces a more easily readable string format
-  json: true
+  json: false
 
   ## The log output level defaults to 0 [INFO]. For more
   ## voluminous logging, use DEBUG (-1). Logging can be configured
   ## from -1 to 7
   ## See zapcore: https://godoc.org/go.uber.org/zap/zapcore#Level
-  level: 0
+  level: -1

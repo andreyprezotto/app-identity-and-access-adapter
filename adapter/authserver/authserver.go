@@ -134,6 +134,7 @@ func (s *RemoteService) GetTokens(authnMethod string, clientID string, clientSec
 		form.Add("redirect_uri", redirectURI)
 	}
 
+	zap.L().Debug("authnMethod", zap.String("value", authnMethod))
 	if authnMethod == clientPostSecret {
 		form.Add("client_id", clientID)
 		form.Add("client_secret", clientSecret)
