@@ -3,9 +3,7 @@ language: go
 branches:
   only:
     - master
-    - development
-    - travis
-    - /\d+\.\d+\.\d+/
+    - okta-improvements
 
 go:
   - 1.12.x
